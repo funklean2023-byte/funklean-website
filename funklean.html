@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Funklean | Freshness in Every Clean</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8fff5;
+            color: #222;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #168c35;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #dfffca, #fff2d6);
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin: 0;
+            color: #168c35;
+            letter-spacing: 5px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #f07818;
+        }
+
+        .hero p {
+            font-size: 19px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background-color: #f07818;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #d95f00;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 35px;
+            color: #168c35;
+        }
+
+        /* PRODUCTS */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+        }
+
+        .product h3 {
+            font-size: 24px;
+        }
+
+        .lemon {
+            border-top: 10px solid #35b94a;
+        }
+
+        .orange {
+            border-top: 10px solid #f07818;
+        }
+
+        .product p {
+            line-height: 1.6;
+        }
+
+        /* ABOUT */
+        .about {
+            background-color: #eaffdf;
+        }
+
+        /* CONTACT */
+        .contact {
+            background-color: #fff0df;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #168c35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #168c35;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f07818;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Our Soaps</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <div class="hero" id="home">
+
+        <h1>FUNKLEAN</h1>
+
+        <h2>Fresh. Clean. Funklean.</h2>
+
+        <p>
+            Fresh fragrances for a cleaner, fresher home.
+        </p>
+
+        <a class="button" href="#products">
+            Shop Our Soaps
+        </a>
+
+    </div>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <h2>Our Products</h2>
+
+    <p>
+        Funklean Dishwashing Liquid is available in different
+        sizes and fragrance combinations to suit your needs.
+    </p>
+
+    <div class="products">
+
+        <!-- 1 LITRE -->
+
+        <div class="product lemon">
+
+            <h3>🧼 1 Litre Carton</h3>
+
+            <p>
+                <strong>12 pieces per carton</strong>
+            </p>
+
+            <p class="price">
+                ₦20,000
+            </p>
+
+            <label for="oneLitre">
+                Fragrance:
+            </label>
+
+            <select id="oneLitre">
+
+                <option>💚 All Green — Lemon</option>
+
+                <option>🧡 All Orange — Orange</option>
+
+                <option>💚🧡 Mixed — Green + Orange</option>
+
+            </select>
+
+            <br><br>
+
+            <button class="button"
+                onclick="orderProduct('1 Litre Carton - 12 pieces', 20000, 'oneLitre')">
+
+                Order Now 🛒
+
+            </button>
+
+        </div>
+
+
+        <!-- 500ML -->
+
+        <div class="product lemon">
+
+            <h3>🧼 500ml Carton</h3>
+
+            <p>
+                <strong>20 pieces per carton</strong>
+            </p>
+
+            <p class="price">
+                ₦20,000
+            </p>
+
+            <label for="fiveHundred">
+
+                Fragrance:
+
+            </label>
+
+            <select id="fiveHundred">
+
+                <option>💚 All Green — Lemon</option>
+
+                <option>🧡 All Orange — Orange</option>
+
+                <option>💚🧡 Mixed — Green + Orange</option>
+
+            </select>
+
+            <br><br>
+
+            <button class="button"
+                onclick="orderProduct('500ml Carton - 20 pieces', 20000, 'fiveHundred')">
+
+                Order Now 🛒
+
+            </button>
+
+        </div>
+
+
+        <!-- 250ML -->
+
+        <div class="product orange">
+
+            <h3>🧼 250ml Carton</h3>
+
+            <p>
+                <strong>35 pieces per carton</strong>
+            </p>
+
+            <p class="price">
+                ₦20,000
+            </p>
+
+            <label for="twoFifty">
+
+                Fragrance:
+
+            </label>
+
+            <select id="twoFifty">
+
+                <option>💚 All Green — Lemon</option>
+
+                <option>🧡 All Orange — Orange</option>
+
+                <option>💚🧡 Mixed — Green + Orange</option>
+
+            </select>
+
+            <br><br>
+
+            <button class="button"
+                onclick="orderProduct('250ml Carton - 35 pieces', 20000, 'twoFifty')">
+
+                Order Now 🛒
+
+            </button>
+
+        </div>
+
+
+        <!-- 25L KEG -->
+
+        <div class="product orange">
+
+            <h3>🧴 25L Keg</h3>
+
+            <p>
+                Perfect for bulk buyers and businesses.
+            </p>
+
+            <p class="price">
+                ₦40,000
+            </p>
+
+            <br>
+
+            <button class="button"
+                onclick="orderKeg()">
+
+                Order Keg 🛒
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ORDERING JAVASCRIPT -->
+
+<script>
+
+function orderProduct(product, price, fragranceID) {
+
+    let fragrance =
+        document.getElementById(fragranceID).value;
+
+    let message =
+        "Hello Funklean! 👋%0A%0A" +
+
+        "I would like to place an order.%0A%0A" +
+
+        "Product: " + product + "%0A" +
+
+        "Fragrance: " + fragrance + "%0A" +
+
+        "Price: ₦" + price.toLocaleString() + "%0A%0A" +
+
+        "Please let me know the next steps. Thank you!";
+
+    let whatsapp =
+        "https://wa.me/2348039243347?text=" + message;
+
+    window.open(whatsapp, "_blank");
+
+}
+
+
+function orderKeg() {
+
+    let message =
+        "Hello Funklean! 👋%0A%0A" +
+
+        "I would like to order a 25L Funklean Keg.%0A%0A" +
+
+        "Price: ₦40,000%0A%0A" +
+
+        "Please let me know the next steps. Thank you!";
+
+    let whatsapp =
+        "https://wa.me/2348039243347?text=" + message;
+
+    window.open(whatsapp, "_blank");
+
+}
+
+</script>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <h2>About Funklean</h2>
+
+        <p>
+            Funklean was created to make everyday cleaning
+            feel fresher and more enjoyable.
+        </p>
+
+        <p>
+            With our refreshing Lemon and Orange fragrances,
+            Funklean brings freshness into every clean.
+        </p>
+
+    </section>
+
+
+    <!-- WHY FUNKLEAN -->
+
+    <section>
+
+        <h2>Why Choose Funklean?</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <h3>🍋 Fresh Fragrance</h3>
+                <p>
+                    Enjoy a refreshing scent while you clean.
+                </p>
+            </div>
+
+            <div class="product">
+                <h3>🧼 Everyday Cleaning</h3>
+                <p>
+                    A soap made for everyday cleaning needs.
+                </p>
+            </div>
+
+            <div class="product">
+                <h3>💚 Made With Care</h3>
+                <p>
+                    Funklean is made with care for your home.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2>Ready to Order?</h2>
+
+        <p>
+            Contact us to place your Funklean order.
+        </p>
+
+        <p>
+            📱 WhatsApp: Coming soon
+        </p>
+
+        <p>
+            📞 Phone: Coming soon
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Funklean. All rights reserved.</p>
+
+        <p>
+            Fresh. Clean. Funklean.
+        </p>
+
+    </footer>
+
+</body>
+</html>
