@@ -143,6 +143,34 @@ select {
     font-weight: bold;
     color: #f07818;
 }
+        #products {
+    position: relative;
+    overflow: hidden;
+    background-color: #fffdf7;
+}
+
+#products::before {
+    content: "FUNKLEAN";
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+
+    font-size: 130px;
+    font-weight: bold;
+    letter-spacing: 15px;
+
+    color: #168c35;
+    opacity: 0.045;
+
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+#products > * {
+    position: relative;
+    z-index: 1;
+}
     </style>
 
 </head>
