@@ -7,10 +7,7 @@
     <title>Funklean | Tough on Grease, Gentle on Hands</title>
 
     <meta name="description"
-        content="Funklean Dishwashing Liquid — tough on grease, gentle on hands. Available in Lemon and Orange fragrances, with 1L, 500ml, 250ml and 25L options.">
-
-    <meta name="keywords"
-        content="Funklean, dishwashing liquid, dish soap, Nigeria, Lemon dishwashing liquid, Orange dishwashing liquid">
+        content="Funklean Dishwashing Liquid — Tough on Grease, Gentle on Hands. Available in Lemon, Orange and mixed fragrance options in multiple sizes.">
 
     <style>
         * {
@@ -35,7 +32,8 @@
             color: inherit;
         }
 
-        button {
+        button,
+        select {
             font-family: inherit;
         }
 
@@ -47,7 +45,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.96);
+            background: rgba(255,255,255,0.96);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid #eeeeee;
         }
@@ -96,7 +94,7 @@
         .nav-order {
             background: #188b38;
             color: white !important;
-            padding: 10px 17px;
+            padding: 10px 16px;
             border-radius: 25px;
         }
 
@@ -109,16 +107,8 @@
             display: flex;
             align-items: center;
             background:
-                radial-gradient(
-                    circle at 15% 20%,
-                    rgba(24, 139, 56, 0.12),
-                    transparent 28%
-                ),
-                radial-gradient(
-                    circle at 85% 75%,
-                    rgba(242, 140, 24, 0.13),
-                    transparent 30%
-                ),
+                radial-gradient(circle at 15% 20%, rgba(24,139,56,0.12), transparent 28%),
+                radial-gradient(circle at 85% 75%, rgba(242,140,24,0.13), transparent 30%),
                 #fffdf7;
         }
 
@@ -145,8 +135,8 @@
         }
 
         .hero h1 {
-            font-size: clamp(48px, 7vw, 82px);
-            line-height: 0.98;
+            font-size: clamp(48px, 7vw, 88px);
+            line-height: 0.95;
             margin-bottom: 24px;
             letter-spacing: -4px;
         }
@@ -186,7 +176,7 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.10);
         }
 
         .btn-green {
@@ -212,12 +202,8 @@
             align-items: center;
             justify-content: center;
             background:
-                linear-gradient(
-                    135deg,
-                    rgba(24, 139, 56, 0.10),
-                    rgba(242, 140, 24, 0.12)
-                );
-            border: 1px solid rgba(24, 139, 56, 0.10);
+                linear-gradient(135deg, rgba(24,139,56,0.10), rgba(242,140,24,0.12));
+            border: 1px solid rgba(24,139,56,0.10);
             position: relative;
             overflow: hidden;
         }
@@ -239,7 +225,7 @@
             width: 190px;
             height: 300px;
             border-radius: 35px 35px 45px 45px;
-            border: 3px dashed rgba(24, 139, 56, 0.45);
+            border: 3px dashed rgba(24,139,56,0.45);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -267,7 +253,7 @@
             margin-bottom: 50px;
         }
 
-        .eyebrow {
+        .section-heading .eyebrow {
             color: #188b38;
             font-size: 13px;
             font-weight: 900;
@@ -301,7 +287,7 @@
         #products::before {
             content: "FUNKLEAN";
             position: absolute;
-            top: 45%;
+            top: 42%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(-15deg);
             font-size: 15vw;
@@ -328,14 +314,14 @@
             background: white;
             border-radius: 28px;
             padding: 25px;
-            box-shadow: 0 15px 45px rgba(24, 70, 35, 0.08);
+            box-shadow: 0 15px 45px rgba(24,70,35,0.08);
             border: 1px solid #edf1ed;
             transition: transform 0.25s, box-shadow 0.25s;
         }
 
         .product-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 20px 55px rgba(24, 70, 35, 0.13);
+            box-shadow: 0 20px 55px rgba(24,70,35,0.13);
         }
 
         .product-image {
@@ -386,26 +372,41 @@
 
         .product-details {
             color: #697069;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
-        .fragrance {
-            display: inline-block;
-            padding: 6px 11px;
-            border-radius: 20px;
-            font-size: 12px;
+        /* =========================
+           DROPDOWN
+        ========================= */
+
+        .fragrance-label {
+            display: block;
+            font-size: 13px;
             font-weight: 800;
-            margin-bottom: 10px;
+            color: #555e57;
+            margin-bottom: 7px;
         }
 
-        .fragrance-green {
-            background: #e5f6e9;
-            color: #188b38;
+        .fragrance-select {
+            width: 100%;
+            padding: 13px 15px;
+            border-radius: 12px;
+            border: 2px solid #d9dfda;
+            background: white;
+            color: #172018;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 18px;
         }
 
-        .fragrance-orange {
-            background: #fff0db;
-            color: #d97808;
+        .fragrance-select:focus {
+            border-color: #188b38;
+        }
+
+        .orange .fragrance-select:focus {
+            border-color: #f28c18;
         }
 
         /* =========================
@@ -433,7 +434,7 @@
         }
 
         .mixed-card {
-            background: linear-gradient(135deg, #eaf8ed, #fff0dd);
+            background: linear-gradient(135deg,#eaf8ed,#fff0dd);
         }
 
         .fragrance-icon {
@@ -451,6 +452,45 @@
         }
 
         /* =========================
+           WHOLESALE
+        ========================= */
+
+        .business-section {
+            background: #172018;
+            color: white;
+        }
+
+        .business-section .section-heading .eyebrow {
+            color: #7fe296;
+        }
+
+        .business-section .section-heading p {
+            color: #bdc8be;
+        }
+
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 22px;
+        }
+
+        .business-card {
+            padding: 30px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.10);
+        }
+
+        .business-card h3 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .business-card p {
+            color: #c4cdc5;
+        }
+
+        /* =========================
            ABOUT
         ========================= */
 
@@ -464,7 +504,7 @@
         .about-box {
             min-height: 350px;
             border-radius: 32px;
-            background: linear-gradient(135deg, #eaf8ed, #fff0dd);
+            background: linear-gradient(135deg,#eaf8ed,#fff0dd);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -475,7 +515,7 @@
         }
 
         .about-text h2 {
-            font-size: clamp(35px, 5vw, 55px);
+            font-size: clamp(35px,5vw,55px);
             line-height: 1;
             margin-bottom: 20px;
         }
@@ -483,45 +523,6 @@
         .about-text p {
             color: #626a63;
             margin-bottom: 15px;
-        }
-
-        /* =========================
-           WHOLESALE
-        ========================= */
-
-        .business-section {
-            background: #172018;
-            color: white;
-        }
-
-        .business-section .eyebrow {
-            color: #7fe296;
-        }
-
-        .business-section .section-heading p {
-            color: #bdc8be;
-        }
-
-        .business-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .business-card {
-            padding: 30px;
-            border-radius: 25px;
-            background: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(255, 255, 255, 0.10);
-        }
-
-        .business-card h3 {
-            font-size: 23px;
-            margin-bottom: 10px;
-        }
-
-        .business-card p {
-            color: #c4cdc5;
         }
 
         /* =========================
@@ -558,16 +559,8 @@
 
         .contact-section {
             background:
-                radial-gradient(
-                    circle at 10% 30%,
-                    rgba(24, 139, 56, 0.10),
-                    transparent 25%
-                ),
-                radial-gradient(
-                    circle at 90% 70%,
-                    rgba(242, 140, 24, 0.12),
-                    transparent 25%
-                ),
+                radial-gradient(circle at 10% 30%,rgba(24,139,56,0.10),transparent 25%),
+                radial-gradient(circle at 90% 70%,rgba(242,140,24,0.12),transparent 25%),
                 #fffdf7;
         }
 
@@ -578,11 +571,11 @@
             background: white;
             border-radius: 32px;
             padding: 55px 30px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.07);
         }
 
         .contact-box h2 {
-            font-size: clamp(35px, 5vw, 55px);
+            font-size: clamp(35px,5vw,55px);
             margin-bottom: 12px;
         }
 
@@ -641,7 +634,7 @@
             max-width: 1200px;
             margin: 30px auto 0;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255,255,255,0.1);
             color: #879187;
             font-size: 13px;
         }
@@ -650,7 +643,7 @@
            MOBILE
         ========================= */
 
-        @media (max-width: 850px) {
+        @media (max-width:850px) {
 
             .nav-links {
                 display: none;
@@ -689,7 +682,7 @@
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width:500px) {
 
             .navbar {
                 padding: 14px 16px;
@@ -704,7 +697,7 @@
             }
 
             .hero h1 {
-                font-size: 52px;
+                font-size: 55px;
                 letter-spacing: -3px;
             }
 
@@ -742,747 +735,710 @@
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
+<header>
+    <nav class="navbar">
 
-    <header>
-        <nav class="navbar">
+        <a href="#home" class="logo">
+            <span class="green">FUNK</span><span class="orange">LEAN</span>
+        </a>
 
-            <a href="#home" class="logo">
-                <span class="green">FUNK</span><span class="orange">LEAN</span>
+        <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#fragrances">Fragrances</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#wholesale">Wholesale</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li>
+                <a class="nav-order"
+                   href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I'd%20like%20to%20make%20an%20order">
+                    Order
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+            <div>
+
+                <span class="hero-label">
+                    FUNKLEAN DISHWASHING LIQUID
+                </span>
+
+                <h1>
+                    Tough on
+                    <span class="green">Grease.</span>
+                    Gentle on
+                    <span class="orange">Hands.</span>
+                </h1>
+
+                <p>
+                    Funklean Dishwashing Liquid is available in
+                    refreshing Lemon and Orange fragrances,
+                    with sizes for homes, businesses and bulk buyers.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="btn btn-green">
+                        Shop Products
+                    </a>
+
+                    <a href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I'd%20like%20to%20make%20an%20order"
+                       class="btn btn-orange">
+                        Order on WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="placeholder-bottle">
+                    PRODUCT PHOTO<br>
+                    COMING SOON
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section id="products">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Shop Funklean
+                </div>
+
+                <h2>Our Products</h2>
+
+                <p>
+                    Choose your size and fragrance.
+                    Select exactly what you want before ordering.
+                </p>
+
+            </div>
+
+
+            <div class="products-grid">
+
+
+                <!-- 1L -->
+
+                <article class="product-card green">
+
+                    <div class="product-image">
+                        PRODUCT PHOTO<br>
+                        1L FUNKLEAN
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>1L Carton</h3>
+
+                        <div class="product-price">
+                            ₦20,000
+                        </div>
+
+                    </div>
+
+                    <p class="product-details">
+                        12 pieces per carton.
+                    </p>
+
+                    <label class="fragrance-label">
+                        Choose fragrance:
+                    </label>
+
+                    <select class="fragrance-select" id="fragrance-1l">
+                        <option value="Lemon">💚 Lemon</option>
+                        <option value="Orange">🧡 Orange</option>
+                        <option value="Lemon and Orange">💚🧡 Both</option>
+                    </select>
+
+                    <button
+                        class="btn btn-green"
+                        onclick="orderProduct('1L Carton', '₦20,000', 'fragrance-1l')">
+                        Order Now
+                    </button>
+
+                </article>
+
+
+                <!-- 500ML -->
+
+                <article class="product-card orange">
+
+                    <div class="product-image">
+                        PRODUCT PHOTO<br>
+                        500ML FUNKLEAN
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>500ml Carton</h3>
+
+                        <div class="product-price">
+                            ₦20,000
+                        </div>
+
+                    </div>
+
+                    <p class="product-details">
+                        20 pieces per carton.
+                    </p>
+
+                    <label class="fragrance-label">
+                        Choose fragrance:
+                    </label>
+
+                    <select class="fragrance-select" id="fragrance-500ml">
+                        <option value="Lemon">💚 Lemon</option>
+                        <option value="Orange">🧡 Orange</option>
+                        <option value="Lemon and Orange">💚🧡 Both</option>
+                    </select>
+
+                    <button
+                        class="btn btn-orange"
+                        onclick="orderProduct('500ml Carton', '₦20,000', 'fragrance-500ml')">
+                        Order Now
+                    </button>
+
+                </article>
+
+
+                <!-- 250ML -->
+
+                <article class="product-card green">
+
+                    <div class="product-image">
+                        PRODUCT PHOTO<br>
+                        250ML FUNKLEAN
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>250ml Carton</h3>
+
+                        <div class="product-price">
+                            ₦20,000
+                        </div>
+
+                    </div>
+
+                    <p class="product-details">
+                        35 pieces per carton.
+                    </p>
+
+                    <label class="fragrance-label">
+                        Choose fragrance:
+                    </label>
+
+                    <select class="fragrance-select" id="fragrance-250ml">
+                        <option value="Lemon">💚 Lemon</option>
+                        <option value="Orange">🧡 Orange</option>
+                        <option value="Lemon and Orange">💚🧡 Both</option>
+                    </select>
+
+                    <button
+                        class="btn btn-green"
+                        onclick="orderProduct('250ml Carton', '₦20,000', 'fragrance-250ml')">
+                        Order Now
+                    </button>
+
+                </article>
+
+
+                <!-- 25L KEG -->
+
+                <article class="product-card orange">
+
+                    <div class="product-image">
+                        PRODUCT PHOTO<br>
+                        25L FUNKLEAN KEG
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>25L Keg</h3>
+
+                        <div class="product-price">
+                            ₦40,000
+                        </div>
+
+                    </div>
+
+                    <p class="product-details">
+                        Bulk 25 litre keg.
+                    </p>
+
+                    <label class="fragrance-label">
+                        Choose fragrance:
+                    </label>
+
+                    <select class="fragrance-select" id="fragrance-25l">
+                        <option value="Lemon">💚 Lemon</option>
+                        <option value="Orange">🧡 Orange</option>
+                        <option value="No Fragrance">⚪ No Fragrance</option>
+                    </select>
+
+                    <button
+                        class="btn btn-orange"
+                        onclick="orderProduct('25L Keg', '₦40,000', 'fragrance-25l')">
+                        Order Now
+                    </button>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FRAGRANCES -->
+
+    <section id="fragrances">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Choose your fragrance
+                </div>
+
+                <h2>Lemon or Orange?</h2>
+
+                <p>
+                    Pick your favourite Funklean fragrance,
+                    or choose both.
+                </p>
+
+            </div>
+
+
+            <div class="fragrance-grid">
+
+                <div class="fragrance-card lemon-card">
+
+                    <div class="fragrance-icon">💚</div>
+
+                    <h3>Lemon</h3>
+
+                    <p>
+                        A refreshing lemon fragrance
+                        for your Funklean dishwashing liquid.
+                    </p>
+
+                </div>
+
+
+                <div class="fragrance-card orange-card">
+
+                    <div class="fragrance-icon">🧡</div>
+
+                    <h3>Orange</h3>
+
+                    <p>
+                        An uplifting orange fragrance
+                        for your Funklean dishwashing liquid.
+                    </p>
+
+                </div>
+
+
+                <div class="fragrance-card mixed-card">
+
+                    <div class="fragrance-icon">💚🧡</div>
+
+                    <h3>Both</h3>
+
+                    <p>
+                        Can't choose?
+                        Get both Lemon and Orange.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="section-container">
+
+            <div class="about-grid">
+
+                <div class="about-box">
+                    FUNKLEAN<br>
+                    BRAND PHOTO<br>
+                    COMING SOON
+                </div>
+
+
+                <div class="about-text">
+
+                    <div class="section-heading"
+                         style="text-align:left; margin-bottom:25px;">
+
+                        <div class="eyebrow">
+                            About Funklean
+                        </div>
+
+                        <h2>
+                            Made for clean.
+                            Made for everyday life.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Funklean is a dishwashing liquid brand
+                        available in Lemon and Orange fragrances.
+                    </p>
+
+                    <p>
+                        We offer different sizes and bulk options
+                        to suit households, retailers and businesses.
+                    </p>
+
+                    <p>
+                        Tough on grease, gentle on hands —
+                        Funklean is made to make everyday cleaning easier.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHOLESALE -->
+
+    <section id="wholesale" class="business-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Business & Bulk Orders
+                </div>
+
+                <h2>
+                    Stock Funklean
+                </h2>
+
+                <p>
+                    Funklean offers carton and bulk options
+                    for customers who need larger quantities.
+                </p>
+
+            </div>
+
+
+            <div class="business-grid">
+
+                <div class="business-card">
+
+                    <h3>📦 Wholesale</h3>
+
+                    <p>
+                        Purchase Funklean by the carton
+                        for your shop or resale business.
+                    </p>
+
+                </div>
+
+
+                <div class="business-card">
+
+                    <h3>🏪 Retailers</h3>
+
+                    <p>
+                        Stock different Funklean sizes
+                        for your customers.
+                    </p>
+
+                </div>
+
+
+                <div class="business-card">
+
+                    <h3>🚚 Bulk Supply</h3>
+
+                    <p>
+                        The 25L keg provides a larger
+                        option for bulk buyers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div style="text-align:center; margin-top:35px;">
+
+                <a href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I'm%20interested%20in%20wholesale%20or%20bulk%20orders"
+                   class="btn btn-orange">
+                    Ask About Wholesale
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section id="faq">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Questions?
+                </div>
+
+                <h2>Frequently Asked Questions</h2>
+
+                <p>
+                    Here are some common questions about ordering Funklean.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <details>
+                    <summary>
+                        What sizes does Funklean come in?
+                    </summary>
+
+                    <p>
+                        Funklean is available in 1L, 500ml,
+                        250ml and 25L keg options.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        What fragrances are available?
+                    </summary>
+
+                    <p>
+                        Funklean is available in Lemon and Orange fragrances.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        Can I order both Lemon and Orange?
+                    </summary>
+
+                    <p>
+                        Yes. The 1L, 500ml and 250ml products
+                        have an option to select both fragrances.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        Does the 25L keg have a no-fragrance option?
+                    </summary>
+
+                    <p>
+                        Yes. The 25L keg can be ordered with
+                        Lemon, Orange or No Fragrance.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        How do I place an order?
+                    </summary>
+
+                    <p>
+                        Choose your product and fragrance,
+                        then click Order Now. WhatsApp will
+                        open with your order details already filled in.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        How much is a carton?
+                    </summary>
+
+                    <p>
+                        The 1L, 500ml and 250ml cartons are each ₦20,000.
+                        The 25L keg is ₦40,000.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-box">
+
+            <div class="section-heading"
+                 style="margin-bottom:20px;">
+
+                <div class="eyebrow">
+                    Ready to order?
+                </div>
+
+                <h2>
+                    Let's get your Funklean.
+                </h2>
+
+                <p>
+                    Contact Funklean directly on WhatsApp
+                    to place an order or ask a question.
+                </p>
+
+            </div>
+
+
+            <a class="phone"
+               href="tel:+2348039243347">
+                0803 924 3347
             </a>
 
-            <ul class="nav-links">
-                <li><a href="#products">Products</a></li>
-                <li><a href="#fragrances">Fragrances</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#wholesale">Wholesale</a></li>
-                <li><a href="#faq">FAQ</a></li>
 
-                <li>
-                    <a
-                        class="nav-order"
-                        href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27d%20like%20to%20make%20an%20order"
-                        target="_blank">
-                        Order
-                    </a>
-                </li>
-            </ul>
+            <a href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I'd%20like%20to%20make%20an%20order"
+               class="btn btn-green">
+                Order on WhatsApp
+            </a>
 
-        </nav>
-    </header>
+        </div>
+
+    </section>
+
+</main>
 
 
-    <main>
+<!-- FOOTER -->
 
-        <!-- =========================
-             HERO
-        ========================= -->
+<footer>
 
-        <section class="hero" id="home">
+    <div class="footer-container">
 
-            <div class="hero-container">
+        <div>
 
-                <div>
-
-                    <span class="hero-label">
-                        FUNKLEAN DISHWASHING LIQUID
-                    </span>
-
-                    <h1>
-                        Tough on Grease,
-                        <span class="green">Gentle on Hands.</span>
-                    </h1>
-
-                    <p>
-                        Funklean Dishwashing Liquid is made for everyday
-                        cleaning, available in refreshing Lemon and Orange
-                        fragrances with sizes for homes, businesses and bulk buyers.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#products" class="btn btn-green">
-                            Shop Products
-                        </a>
-
-                        <a
-                            href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27d%20like%20to%20make%20an%20order"
-                            target="_blank"
-                            class="btn btn-orange">
-                            Order on WhatsApp
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-visual">
-
-                    <div class="placeholder-bottle">
-                        PRODUCT PHOTO<br>
-                        COMING SOON
-                    </div>
-
-                </div>
-
+            <div class="footer-logo">
+                <span class="green">FUNK</span><span class="orange">LEAN</span>
             </div>
 
-        </section>
-
-
-        <!-- =========================
-             PRODUCTS
-        ========================= -->
-
-        <section id="products">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <div class="eyebrow">
-                        Shop Funklean
-                    </div>
-
-                    <h2>
-                        Our Products
-                    </h2>
-
-                    <p>
-                        Choose the size and fragrance that works
-                        best for you or your business.
-                    </p>
-
-                </div>
-
-
-                <div class="products-grid">
-
-
-                    <!-- 1L -->
-
-                    <article class="product-card green">
-
-                        <div class="product-image">
-                            PRODUCT PHOTO<br>
-                            1L FUNKLEAN
-                        </div>
-
-                        <span class="fragrance fragrance-green">
-                            💚 LEMON
-                        </span>
-
-                        <div class="product-info">
-
-                            <div>
-                                <h3>1L Carton</h3>
-                            </div>
-
-                            <div class="product-price">
-                                ₦20,000
-                            </div>
-
-                        </div>
-
-                        <p class="product-details">
-                            12 pieces per carton.
-                        </p>
-
-                        <a
-                            href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27d%20like%20to%20order%20a%20carton%20of%201L%20Lemon%20Funklean%20Dishwashing%20Liquid"
-                            target="_blank"
-                            class="btn btn-green">
-                            Order Now
-                        </a>
-
-                    </article>
-
-
-                    <!-- 500ML -->
-
-                    <article class="product-card orange">
-
-                        <div class="product-image">
-                            PRODUCT PHOTO<br>
-                            500ML FUNKLEAN
-                        </div>
-
-                        <span class="fragrance fragrance-orange">
-                            🧡 ORANGE
-                        </span>
-
-                        <div class="product-info">
-
-                            <div>
-                                <h3>500ml Carton</h3>
-                            </div>
-
-                            <div class="product-price">
-                                ₦20,000
-                            </div>
-
-                        </div>
-
-                        <p class="product-details">
-                            20 pieces per carton.
-                        </p>
-
-                        <a
-                            href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27d%20like%20to%20order%20a%20carton%20of%20500ml%20Orange%20Funklean%20Dishwashing%20Liquid"
-                            target="_blank"
-                            class="btn btn-orange">
-                            Order Now
-                        </a>
-
-                    </article>
-
-
-                    <!-- 250ML -->
-
-                    <article class="product-card green">
-
-                        <div class="product-image">
-                            PRODUCT PHOTO<br>
-                            250ML FUNKLEAN
-                        </div>
-
-                        <span class="fragrance fragrance-green">
-                            💚 LEMON
-                        </span>
-
-                        <div class="product-info">
-
-                            <div>
-                                <h3>250ml Carton</h3>
-                            </div>
-
-                            <div class="product-price">
-                                ₦20,000
-                            </div>
-
-                        </div>
-
-                        <p class="product-details">
-                            35 pieces per carton.
-                        </p>
-
-                        <a
-                            href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27d%20like%20to%20order%20a%20carton%20of%20250ml%20Lemon%20Funklean%20Dishwashing%20Liquid"
-                            target="_blank"
-                            class="btn btn-green">
-                            Order Now
-                        </a>
-
-                    </article>
-
-
-                    <!-- 25L -->
-
-                    <article class="product-card orange">
-
-                        <div class="product-image">
-                            PRODUCT PHOTO<br>
-                            25L FUNKLEAN KEG
-                        </div>
-
-                        <span class="fragrance fragrance-orange">
-                            🧡 ORANGE
-                        </span>
-
-                        <div class="product-info">
-
-                            <div>
-                                <h3>25L Keg</h3>
-                            </div>
-
-                            <div class="product-price">
-                                ₦40,000
-                            </div>
-
-                        </div>
-
-                        <p class="product-details">
-                            Bulk 25 litre keg.
-                        </p>
-
-                        <a
-                            href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27d%20like%20to%20order%20a%2025L%20Funklean%20Dishwashing%20Liquid%20keg"
-                            target="_blank"
-                            class="btn btn-orange">
-                            Order Now
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             FRAGRANCES
-        ========================= -->
-
-        <section id="fragrances">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <div class="eyebrow">
-                        Choose Your Fragrance
-                    </div>
-
-                    <h2>
-                        Lemon or Orange?
-                    </h2>
-
-                    <p>
-                        Pick your favourite Funklean fragrance,
-                        or ask about a mixed order.
-                    </p>
-
-                </div>
-
-
-                <div class="fragrance-grid">
-
-                    <div class="fragrance-card lemon-card">
-
-                        <div class="fragrance-icon">
-                            🍋
-                        </div>
-
-                        <h3>
-                            Lemon
-                        </h3>
-
-                        <p>
-                            A refreshing lemon fragrance
-                            for your Funklean dishwashing liquid.
-                        </p>
-
-                    </div>
-
-
-                    <div class="fragrance-card orange-card">
-
-                        <div class="fragrance-icon">
-                            🍊
-                        </div>
-
-                        <h3>
-                            Orange
-                        </h3>
-
-                        <p>
-                            An uplifting orange fragrance
-                            for your Funklean dishwashing liquid.
-                        </p>
-
-                    </div>
-
-
-                    <div class="fragrance-card mixed-card">
-
-                        <div class="fragrance-icon">
-                            🍋🍊
-                        </div>
-
-                        <h3>
-                            Mixed
-                        </h3>
-
-                        <p>
-                            Want both fragrances?
-                            Contact Funklean about mixed orders.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ABOUT
-        ========================= -->
-
-        <section id="about">
-
-            <div class="section-container">
-
-                <div class="about-grid">
-
-                    <div class="about-box">
-                        FUNKLEAN<br>
-                        BRAND PHOTO<br>
-                        COMING SOON
-                    </div>
-
-
-                    <div class="about-text">
-
-                        <div
-                            class="section-heading"
-                            style="text-align: left; margin-bottom: 25px;">
-
-                            <div class="eyebrow">
-                                About Funklean
-                            </div>
-
-                            <h2>
-                                Made for clean.
-                                Made for everyday life.
-                            </h2>
-
-                        </div>
-
-                        <p>
-                            Funklean is a dishwashing liquid brand
-                            available in Lemon and Orange fragrances.
-                        </p>
-
-                        <p>
-                            We offer different sizes and bulk options
-                            to suit households, retailers and businesses.
-                        </p>
-
-                        <p>
-                            More information about the Funklean story
-                            and the people behind the brand can be added here.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             WHOLESALE
-        ========================= -->
-
-        <section id="wholesale" class="business-section">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <div class="eyebrow">
-                        Business & Bulk Orders
-                    </div>
-
-                    <h2>
-                        Stock Funklean
-                    </h2>
-
-                    <p>
-                        Funklean offers carton and bulk options
-                        for customers who need larger quantities.
-                    </p>
-
-                </div>
-
-
-                <div class="business-grid">
-
-                    <div class="business-card">
-
-                        <h3>
-                            📦 Wholesale
-                        </h3>
-
-                        <p>
-                            Purchase Funklean by the carton
-                            for your shop or resale business.
-                        </p>
-
-                    </div>
-
-
-                    <div class="business-card">
-
-                        <h3>
-                            🏪 Retailers
-                        </h3>
-
-                        <p>
-                            Stock different Funklean sizes
-                            for your customers.
-                        </p>
-
-                    </div>
-
-
-                    <div class="business-card">
-
-                        <h3>
-                            🚚 Bulk Supply
-                        </h3>
-
-                        <p>
-                            The 25L keg provides a larger
-                            option for bulk buyers.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div style="text-align: center; margin-top: 35px;">
-
-                    <a
-                        href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27m%20interested%20in%20wholesale%20or%20bulk%20orders"
-                        target="_blank"
-                        class="btn btn-orange">
-                        Ask About Wholesale
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             FAQ
-        ========================= -->
-
-        <section id="faq">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <div class="eyebrow">
-                        Questions?
-                    </div>
-
-                    <h2>
-                        Frequently Asked Questions
-                    </h2>
-
-                    <p>
-                        Here are some common questions about ordering Funklean.
-                    </p>
-
-                </div>
-
-
-                <div class="faq">
-
-                    <details>
-                        <summary>
-                            What sizes does Funklean come in?
-                        </summary>
-
-                        <p>
-                            Funklean is available in 1L, 500ml,
-                            250ml and 25L keg options.
-                        </p>
-                    </details>
-
-
-                    <details>
-                        <summary>
-                            Do you sell individual bottles?
-                        </summary>
-
-                        <p>
-                            Funklean is currently sold in packs/cartons
-                            rather than one bottle at a time.
-                        </p>
-                    </details>
-
-
-                    <details>
-                        <summary>
-                            What fragrances are available?
-                        </summary>
-
-                        <p>
-                            Funklean is available in Lemon and Orange fragrances.
-                        </p>
-                    </details>
-
-
-                    <details>
-                        <summary>
-                            Can I order a mixture of Lemon and Orange?
-                        </summary>
-
-                        <p>
-                            Mixed orders can be requested through WhatsApp.
-                            Contact Funklean with what you need.
-                        </p>
-                    </details>
-
-
-                    <details>
-                        <summary>
-                            How do I place an order?
-                        </summary>
-
-                        <p>
-                            Click any Order Now or Order on WhatsApp button
-                            on this website to contact Funklean.
-                        </p>
-                    </details>
-
-
-                    <details>
-                        <summary>
-                            How much is a carton?
-                        </summary>
-
-                        <p>
-                            The 1L, 500ml and 250ml cartons are each ₦20,000.
-                            The 25L keg is ₦40,000.
-                        </p>
-                    </details>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================= -->
-
-        <section id="contact" class="contact-section">
-
-            <div class="contact-box">
-
-                <div
-                    class="section-heading"
-                    style="margin-bottom: 20px;">
-
-                    <div class="eyebrow">
-                        Ready to Order?
-                    </div>
-
-                    <h2>
-                        Let's get your Funklean.
-                    </h2>
-
-                    <p>
-                        Contact Funklean directly on WhatsApp
-                        to place an order or ask a question.
-                    </p>
-
-                </div>
-
-
-                <a
-                    class="phone"
-                    href="tel:+2348039243347">
-                    0803 924 3347
-                </a>
-
-
-                <a
-                    href="https://wa.me/2348039243347?text=Hi%20Funklean%2C%20I%27d%20like%20to%20make%20an%20order"
-                    target="_blank"
-                    class="btn btn-green">
-                    Order on WhatsApp
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
-    <footer>
-
-        <div class="footer-container">
-
-            <div>
-
-                <div class="footer-logo">
-                    <span class="green">FUNK</span><span class="orange">LEAN</span>
-                </div>
-
-                <p class="footer-text">
-                    Funklean Dishwashing Liquid —
-                    tough on grease, gentle on hands.
-                    Available in Lemon and Orange fragrances.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <strong>
-                    Quick Links
-                </strong>
-
-                <p style="margin-top: 10px; color: #aeb8af;">
-
-                    <a href="#products">
-                        Products
-                    </a>
-                    <br>
-
-                    <a href="#fragrances">
-                        Fragrances
-                    </a>
-                    <br>
-
-                    <a href="#about">
-                        About
-                    </a>
-                    <br>
-
-                    <a href="#wholesale">
-                        Wholesale
-                    </a>
-                    <br>
-
-                    <a href="#faq">
-                        FAQ
-                    </a>
-                    <br>
-
-                    <a href="#contact">
-                        Contact
-                    </a>
-
-                </p>
-
-            </div>
+            <p class="footer-text">
+                Funklean Dishwashing Liquid —
+                Tough on Grease, Gentle on Hands.
+            </p>
 
         </div>
 
 
-        <div class="copyright">
-            © 2026 Funklean. All rights reserved.
+        <div>
+
+            <strong>Quick Links</strong>
+
+            <p style="margin-top:10px; color:#aeb8af;">
+
+                <a href="#products">Products</a><br>
+                <a href="#about">About</a><br>
+                <a href="#wholesale">Wholesale</a><br>
+                <a href="#faq">FAQ</a><br>
+                <a href="#contact">Contact</a>
+
+            </p>
+
         </div>
 
-    </footer>
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Funklean. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP ORDER SCRIPT
+========================= -->
+
+<script>
+
+function orderProduct(product, price, fragranceId) {
+
+    const fragrance =
+        document.getElementById(fragranceId).value;
+
+    const message =
+        "Hi Funklean! I'd like to order the " +
+        product +
+        " (" +
+        fragrance +
+        "). Price: " +
+        price +
+        ".";
+
+    const whatsappURL =
+        "https://wa.me/2348039243347?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+}
+
+</script>
 
 </body>
 </html>
