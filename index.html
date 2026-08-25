@@ -324,18 +324,25 @@
             box-shadow: 0 20px 55px rgba(24,70,35,0.13);
         }
 
-        .product-image {
-            height: 270px;
-            border-radius: 22px;
-            background: #f4f7f4;
-            border: 2px dashed #d4ddd5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #8a948c;
-            margin-bottom: 22px;
-        }
+       .product-image {
+    height: 270px;
+    border-radius: 22px;
+    background: #f4f7f4;
+    border: 2px solid #d4ddd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    padding: 10px;
+}
 
         .product-card.green .product-image {
             background: #effaf1;
@@ -846,10 +853,9 @@
 
                 <article class="product-card green">
 
-                    <div class="product-image">
-                        PRODUCT PHOTO<br>
-                        1L FUNKLEAN
-                    </div>
+                   <div class="product-image">
+    <img src="funklean-1l.jpg" alt="Funklean 1L Dishwashing Liquid">
+</div>
 
                     <div class="product-info">
 
@@ -889,9 +895,8 @@
                 <article class="product-card orange">
 
                     <div class="product-image">
-                        PRODUCT PHOTO<br>
-                        500ML FUNKLEAN
-                    </div>
+    <img src="funklean-500ml.jpg" alt="Funklean 500ml Dishwashing Liquid">
+</div>
 
                     <div class="product-info">
 
